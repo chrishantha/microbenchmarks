@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    # Copyright 2016 M. Isuru Tharanga Chrishantha Perera
+    #
+    # Licensed under the Apache License, Version 2.0 (the "License");
+    # you may not use this file except in compliance with the License.
+    # You may obtain a copy of the License at
+    #
+    # http://www.apache.org/licenses/LICENSE-2.0
+    #
+    # Unless required by applicable law or agreed to in writing, software
+    # distributed under the License is distributed on an "AS IS" BASIS,
+    # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    # See the License for the specific language governing permissions and
+    # limitations under the License.
+-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.github.chrishantha.microbenchmark</groupId>
+        <artifactId>microbenchmarks</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>objectpools</artifactId>
+    <packaging>jar</packaging>
+    <name>Microbenchmark: Object Pools</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>${commons.pool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>${commons.pool2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>nf.fr.eraasoft</groupId>
+            <artifactId>objectpool</artifactId>
+            <version>${eraasoft.objectpool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.danielw</groupId>
+            <artifactId>fast-object-pool</artifactId>
+            <version>${fast.object.pool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.vibur</groupId>
+            <artifactId>vibur-object-pool</artifactId>
+            <version>${vibur.object.pool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.chrisvest</groupId>
+            <artifactId>stormpot</artifactId>
+            <version>${stormpot.version}</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <commons.pool.version>1.6</commons.pool.version>
+        <commons.pool2.version>2.4.2</commons.pool2.version>
+        <eraasoft.objectpool.version>1.1.2</eraasoft.objectpool.version>
+        <fast.object.pool.version>2.0.0</fast.object.pool.version>
+        <vibur.object.pool.version>12.0</vibur.object.pool.version>
+        <stormpot.version>2.4.1</stormpot.version>
+    </properties>
+
+</project>
